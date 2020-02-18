@@ -1,6 +1,6 @@
 .form-register {
   width: 40%;
-  margin:50px  auto;
+  margin: 50px auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
   height: 50px;
   padding: 10px 15px;
   border: 1px solid #b2b2b2;
-  color:#b2b2b2;
+  color: #3f3e3e;
   border-radius: 2px;
   outline: none;
   margin: 5px;
@@ -19,11 +19,11 @@
 }
 
 .form-register input::-webkit-input-placeholder {
-  color:#b2b2b2;
+  color: #b2b2b2;
 }
 
 .form-register input:focus {
-  border:1px solid #0db14b;
+  border: 1px solid #0db14b;
 }
 
 .form-register button {
@@ -31,13 +31,17 @@
   height: 50px;
   padding: 10px 15px;
   background: #fff;
-  border:1px solid #0db14b;
+  border: 1px solid #0db14b;
   border-radius: 2px;
-  color:#323232;
+  color: #323232;
   outline: none;
   margin: 5px;
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
 
-.form-register button:hover{background: #0db14b; color:#fff; transition: all .3s ease-in-out;}
+.form-register button:hover {
+  background: #0db14b;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
