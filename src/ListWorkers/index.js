@@ -50,7 +50,16 @@ function ListWorkers() {
         </div>
 
         {professionalsByRole.map(item => (
-          <article key={item.id}>{item.name}</article>
+          <article key={item.id}>
+            <span className="workers-title">
+              <b>Nome: </b>{item.name}</span>
+              <p><b>Idade: </b> {item.age} anos</p>
+              <p><b>Cargo: </b> {item.office}</p>
+              <div className="btns">
+              <button className="btn icons icons-edit">Editar</button>
+              <button className="btn icons icons-delete">Deletar</button>
+            </div>
+          </article>
         ))}
 
         {/* {listOneWorker.map(workers => (
