@@ -88,7 +88,6 @@ function ListWorkers() {
 
   return (
     <>
-      {console.log(userEdit)}
       <div className="list-workers">
         <div className="select">
           <select
@@ -99,7 +98,6 @@ function ListWorkers() {
             {professionalsList && handleListRoles(professionalsList)}
           </select>
         </div>
-        {console.log(userEdit)}
         <form onSubmit={handleUpdateProfessional}>
           {professionalsByRole.map(item => (
             <article key={item.id}>
@@ -180,70 +178,6 @@ function ListWorkers() {
             </article>
           ))}
         </form>
-
-        {/* {listOneWorker.map(workers => (
-          <article key={workers.id}>
-            <form>
-              <span className="workers-title">
-                <b>
-                  Nome:{" "}
-                  <input
-                    type="text"
-                    name="name"
-                    defaultValue={workers.name || name}
-                    onChange={e => setName(e.target.value)}
-                  />{" "}
-                </b>
-              </span>
-              <p>
-                <b>Idade: </b>{" "}
-                <input
-                  type="text"
-                  name="age"
-                  defaultValue={workers.age || age}
-                  onChange={e => setAge(e.target.value)}
-                />
-              </p>
-              <p>
-                <b>Cargo: </b>{" "}
-                <input
-                  type="text"
-                  name="office"
-                  defaultValue={workers.office || office}
-                  onChange={e => setOffice(e.target.value)}
-                  required={true}
-                />
-              </p>
-              <div className="btns">
-                <button
-                  type="submit"
-                  className="btn icons icons-edit"
-                  onClick={e => updateOneWorker(e, `${workers.id}`)}
-                >
-                  Editar
-                </button>
-                <button
-                  className="btn icons icons-delete"
-                  onClick={e => handleDelete(e, `${workers.id}`)}
-                >
-                  Deletar
-                </button>
-              </div>
-            </form>
-          </article>
-        ))} */}
-
-        {/* { listOneWorker.map(workers => (
-        <article key={workers.id}>
-          <span className="workers-title"><b>Nome: </b>{workers.name}</span>
-          <p><b>Idade: </b> {workers.age} anos</p>
-          <p><b>Cargo: </b> {workers.office}</p>
-          <div className="btns">
-            <button className="btn icons icons-edit">Editar</button>
-            <button className="btn icons icons-delete" onClick={e => handleDelete(e, `${workers.id}`)}>Deletar</button>
-          </div>
-        </article>
-      ))} */}
 
         {/* <span>{message}</span> */}
       </div>
