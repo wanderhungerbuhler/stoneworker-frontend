@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://stoneworkerapi.herokuapp.com/api"
+  baseURL: "https://stoneworker-api.herokuapp.com/api"
 });
 
 export default api;
