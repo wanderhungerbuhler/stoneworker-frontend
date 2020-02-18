@@ -1,0 +1,14 @@
+.welcome {
+  width: 70%;
+  display: flex;
+  margin:50px auto;
+}
+
+.welcome h1 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.welcome p {color:#b2b2b2;}
+
+.welcome img{width: 60%;}

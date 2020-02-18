@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  background: #0b903d;
+}
+
+.header .logo {
+  margin-top:50px;
+}
+
